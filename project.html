@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du Projet - M. Islam</title>
+    
+    <link rel="stylesheet" href="css0splm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="loading">
+
+    <div id="preloader">
+        <div class="loader-content">
+            <span class="loader-text">Chargement...</span>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <div class="noise"></div>
+    
+    <canvas id="bg"></canvas>
+
+    <header class="header">
+        <nav class="navbar glass sticky">
+            <div class="max-width">
+                <a href="index.html" class="logo hover-trigger">M. Islam<span>.</span></a>
+                <ul class="menu">
+                    <li><a href="index.html" class="hover-trigger">Accueil</a></li>
+                    <li><a href="index.html#portfolio" class="hover-trigger">Portfolio</a></li>
+                    <li><a href="index.html#contact" class="hover-trigger">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="project-details" id="project-details-page">
+        <div class="max-width">
+            
+            <div class="glass-panel project-container" data-tilt data-tilt-max="3" data-tilt-speed="400">
+                
+                <div class="project-header">
+                    <h1 class="title" id="p-title">Chargement...</h1>
+                    <p class="project-subtitle" id="p-category">Catégorie</p>
+                </div>
+                
+                <div class="project-media-wrapper">
+                    <div id="p-media-container">
+                        </div>
+                    
+                    <button id="prev-slide" class="slide-btn prev hover-trigger"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next-slide" class="slide-btn next hover-trigger"><i class="fas fa-chevron-right"></i></button>
+                    
+                    <div id="slide-counter">1 / 1</div>
+                </div>
+
+                <div class="project-info">
+                    <h3>À propos de ce projet</h3>
+                    <p id="p-desc">Description du projet...</p>
+                    
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span id="p-date">-</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-tools"></i>
+                            <span id="p-tools">-</span>
+                        </div>
+                    </div>
+
+                    <a href="index.html" class="btn hover-trigger glow-effect">Retour aux projets</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <span>Mohamed Islam Moutib | 2025</span>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/three@0.127.0/build/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script src="islmjavsa.js"></script>
+</body>
+</html>

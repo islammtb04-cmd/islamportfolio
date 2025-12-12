@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mohamed Islam Moutib</title>
+    
+    <link rel="stylesheet" href="css0splm.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="loading">
+
+    <div id="preloader">
+        <div class="loader-content">
+            <span class="loader-text">M. ISLAM</span>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <div class="noise"></div>
+
+    <canvas id="bg"></canvas>
+
+    <header class="header">
+        <nav class="navbar glass">
+            <div class="max-width">
+                <a href="#home" class="logo hover-trigger">M. Islam<span>.</span></a>
+                <div class="menu-btn hover-trigger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="menu">
+                    <li><a href="#home" class="hover-trigger">Accueil</a></li>
+                    <li><a href="#about" class="hover-trigger">À Propos</a></li>
+                    <li><a href="#portfolio" class="hover-trigger">Portfolio</a></li>
+                    <li><a href="#skills" class="hover-trigger">Compétences</a></li>
+                    <li><a href="#resume" class="hover-trigger">Parcours</a></li>
+                    <li><a href="#contact" class="hover-trigger">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content glass-panel-large" data-tilt data-tilt-max="2" data-tilt-speed="1000">
+            <div class="text-1">Bonjour, je suis</div>
+            <div class="text-2">Mohamed Islam Moutib</div>
+            <div class="text-3">Et je suis <span class="typing"></span></div>
+            <p>Étudiant à l'ENSAD, j'ai 20 ans et je suis passionné par la création visuelle. Je transforme les concepts en expériences numériques immersives.</p>
+            <a href="#contact" class="btn hover-trigger glow-effect">Me Contacter</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">À Propos de moi</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <div class="img-container glass" data-tilt>
+                        <img loading="lazy" src="img/img_5786.jpg" alt="Portrait">
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Je suis Mohamed Islam Moutib, un <span class="typing-2"></span></div>
+                    <p>Graphiste passionné par la création visuelle, je fais preuve d'un excellent esprit d'équipe et suis constamment motivé à enrichir mon expérience dans des projets innovants et exigeants.</p>
+                    <div class="info-box glass-panel" data-tilt>
+                        <p><strong>Âge :</strong> 20 Ans</p>
+                        <p><strong>Ville :</strong> Casablanca, Maroc</p>
+                        <p><strong>Langues :</strong> Arabe, Anglais, Français</p>
+                        <p><strong>Intérêts :</strong> Art, Musculation, Cinéma</p>
+                    </div>
+                    <a href="CV-mohamed islam.pdf" class="btn hover-trigger glow-effect" download>Télécharger CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="max-width">
+            <h2 class="title">Mon Portfolio</h2>
+            
+            <div class="portfolio-nav">
+                <span class="filter-btn active hover-trigger" data-filter="all">Tout</span>
+                <span class="filter-btn hover-trigger" data-filter="design">Design UI/UX</span>
+                <span class="filter-btn hover-trigger" data-filter="3d">3D & Blender</span>
+                <span class="filter-btn hover-trigger" data-filter="video">Vidéo & Montage</span>
+            </div>
+
+            <div class="portfolio-content grid">
+                <a href="project.html?id=1" class="card glass hover-trigger" data-category="design" data-tilt data-tilt-scale="1.02">
+                    <div class="box">
+                        <img class="card-media" src="img/capture-2025-10-31-011639.png" alt="Identité visuelle">
+                        <div class="text">Identité Visuelle</div>
+                        <p>Création de logo et charte graphique.</p>
+                    </div>
+                </a>
+
+                <a href="project.html?id=2" class="card glass hover-trigger" data-category="3d" data-tilt data-tilt-scale="1.02">
+                    <div class="box">
+                        <img class="card-media" src="img/capture-2025-12-02-230052.png" alt="Modélisation 3D">
+                        <div class="text">Modélisation 3D</div>
+                        <p>Rendu réalisé avec Blender.</p>
+                    </div>
+                </a>
+
+                <a href="project.html?id=3" class="card glass hover-trigger" data-category="design" data-tilt data-tilt-scale="1.02">
+                    <div class="box">
+                        <img class="card-media" src="img/mockup-lifeflow.png" alt="Maquette UI/UX">
+                        <div class="text">Maquette UI/UX</div>
+                        <p>Design d'interface web sur Figma.</p>
+                    </div>
+                </a>
+
+                <a href="project.html?id=4" class="card glass hover-trigger" data-category="3d" data-tilt data-tilt-scale="1.02">
+                    <div class="box">
+                        <img class="card-media" src="img/capture-2025-06-17-211010.png" alt="Projet 3D">
+                        <div class="text">Workflow 3D</div>
+                        <p>Étapes de création et rendu final.</p>
+                    </div>
+                </a>
+
+                <a href="project.html?id=5" class="card glass hover-trigger" data-category="video" data-tilt data-tilt-scale="1.02">
+                    <div class="box">
+                        <video class="card-media" src="img/monsetr-islam-colir-gar-dxardn.mp4" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()"></video>
+                        <div class="text">Animation 3D</div>
+                        <p>Rendu animé réalisé avec Blender.</p>
+                    </div>
+                </a>
+
+                <a href="project.html?id=6" class="card glass hover-trigger" data-category="video" data-tilt data-tilt-scale="1.02">
+                    <div class="box">
+                        <img class="card-media" src="img/capture-2025-11-19-050209.png" alt="Motion Design">
+                        <div class="text">Motion Design</div>
+                        <p>Montage dynamique After Effects.</p>
+                    </div>
+                </a>
+                
+                <a href="project.html?id=7" class="card glass hover-trigger" data-category="design" data-tilt data-tilt-scale="1.02">
+                    <div class="box">
+                        <img class="card-media" src="img/iikk.png" alt="Collage">
+                        <div class="text">Collage Artistique</div>
+                        <p>Poster & collage designs.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">Mes Compétences</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">Mes compétences créatives & techniques.</div>
+                    <p>Je maîtrise une suite complète d'outils de design numérique. Je m'efforce de toujours apprendre les dernières technologies pour rester à la pointe de l'innovation.</p>
+                    <a href="#resume" class="btn hover-trigger glow-effect">Voir mon parcours</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>Adobe Photoshop / Illustrator</span>
+                            <span class="counter" data-target="90">0%</span>
+                        </div>
+                        <div class="line glass-line" data-percent="90%"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Figma / Adobe XD</span>
+                            <span class="counter" data-target="85">0%</span>
+                        </div>
+                        <div class="line glass-line" data-percent="85%"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Blender (3D)</span>
+                            <span class="counter" data-target="80">0%</span>
+                        </div>
+                        <div class="line glass-line" data-percent="80%"></div>
+                    </div>
+                     <div class="bars">
+                        <div class="info">
+                            <span>After Effects</span>
+                            <span class="counter" data-target="70">0%</span>
+                        </div>
+                        <div class="line glass-line" data-percent="70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="resume" id="resume">
+        <div class="max-width">
+            <h2 class="title">Mon Parcours</h2>
+            <div class="resume-content">
+                <div class="column">
+                    <h3 class="sub-title">Formation</h3>
+                    <div class="timeline-box">
+                        <div class="timeline" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+                            <div class="time">2024 - 2027</div>
+                            <div class="role">Diplôme de l'ENSAD (Bac+5) </div>
+                            <div class="place">ENSAD</div>
+                        </div>
+                        <div class="timeline" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+                            <div class="time">2022 - 2024</div>
+                            <div class="role">Technicien Spécialisé Digital Design </div>
+                            <div class="place">Institut Supérieur des Arts Graphiques</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <h3 class="sub-title">Expérience</h3>
+                    <div class="timeline-box">
+                        <div class="timeline" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+                            <div class="time">Stage (3 Mois)</div>
+                            <div class="role">Graphic Designer Stagiaire </div>
+                            <div class="place">MS ARCHI</div>
+                            <p>Assistance design et architecture.</p>
+                        </div>
+                        <div class="timeline" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+                            <div class="time">Stage (1 Mois)</div>
+                            <div class="role">Designer Stagiaire</div>
+                            <div class="place">ITHRI DESIGN</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contactez-moi</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Entrer en contact</div>
+                    <p>Discutons de votre prochain projet ! MAR7BAAAA</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Nom</div>
+                                <div class="sub-title">Mohamed Islam Moutib</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">moutibmohamedislam@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-phone"></i>
+                            <div class="info">
+                                <div class="head">Téléphone</div>
+                                <div class="sub-title">0670354654</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message</div>
+                    <form id="contactForm" class="glass-panel" data-tilt data-tilt-scale="1.01">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" id="name" placeholder="Nom" required class="hover-trigger">
+                            </div>
+                            <div class="field email">
+                                <input type="email" id="email" placeholder="Email" required class="hover-trigger">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" id="subject" placeholder="Sujet" required class="hover-trigger">
+                        </div>
+                        <div class="field textarea">
+                            <textarea id="message" cols="30" rows="10" placeholder="Message.." required class="hover-trigger"></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit" class="hover-trigger glow-effect">Envoyer</button>
+                        </div>
+                        <div id="form-message" style="margin-top: 15px; font-weight: 500;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>Créé par <a href="#" class="hover-trigger">Mohamed Islam Moutib</a> | 2025 Tous droits réservés.</span>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://unpkg.com/three@0.127.0/build/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script src="islmjavsa.js"></script>
+</body>
+</html>
